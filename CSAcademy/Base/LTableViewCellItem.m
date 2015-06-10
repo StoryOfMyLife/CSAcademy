@@ -7,7 +7,6 @@
 //
 
 #import "LTableViewCellItem.h"
-#import "LTableViewCell.h"
 
 @implementation LTableViewCellItem
 

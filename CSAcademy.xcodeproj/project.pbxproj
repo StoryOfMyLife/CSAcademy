@@ -20,6 +20,14 @@
 		BFABDB721B2816880053DDDB /* YDDownloadRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB6C1B2816880053DDDB /* YDDownloadRequestOperation.m */; };
 		BFABDB731B2816880053DDDB /* YDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB6F1B2816880053DDDB /* YDNetworkManager.m */; };
 		BFABDB741B2816880053DDDB /* YDNetworkRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB711B2816880053DDDB /* YDNetworkRequestOperation.m */; };
+		BFABDB7A1B2840360053DDDB /* AES128Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB791B2840360053DDDB /* AES128Util.m */; };
+		BFABDB7D1B2841710053DDDB /* MeetingVideoDateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB7C1B2841710053DDDB /* MeetingVideoDateListViewController.m */; };
+		BFABDB811B2842500053DDDB /* MeetingVideoDateListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB801B2842500053DDDB /* MeetingVideoDateListItem.m */; };
+		BFABDB841B2847760053DDDB /* MeetingCategoryListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB831B2847760053DDDB /* MeetingCategoryListController.m */; };
+		BFABDB871B28478F0053DDDB /* MeetingCategoryListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB861B28478F0053DDDB /* MeetingCategoryListItem.m */; };
+		BFABDB8D1B2849180053DDDB /* MeetingVideoListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB8C1B2849180053DDDB /* MeetingVideoListItem.m */; };
+		BFABDB901B2849300053DDDB /* MeetingVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB8F1B2849300053DDDB /* MeetingVideoListController.m */; };
+		BFABDB931B284F100053DDDB /* MeetingVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB921B284F100053DDDB /* MeetingVideoController.m */; };
 		BFD1640A1B27FE2600BABD09 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164091B27FE2600BABD09 /* MyViewController.m */; };
 		BFD1643C1B28000C00BABD09 /* LTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164311B28000B00BABD09 /* LTableViewCell.m */; };
 		BFD1643D1B28000C00BABD09 /* LTableViewCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164331B28000B00BABD09 /* LTableViewCellItem.m */; };
@@ -66,6 +74,22 @@
 		BFABDB6F1B2816880053DDDB /* YDNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworkManager.m; sourceTree = "<group>"; };
 		BFABDB701B2816880053DDDB /* YDNetworkRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworkRequestOperation.h; sourceTree = "<group>"; };
 		BFABDB711B2816880053DDDB /* YDNetworkRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworkRequestOperation.m; sourceTree = "<group>"; };
+		BFABDB781B2840360053DDDB /* AES128Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES128Util.h; sourceTree = "<group>"; };
+		BFABDB791B2840360053DDDB /* AES128Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES128Util.m; sourceTree = "<group>"; };
+		BFABDB7B1B2841710053DDDB /* MeetingVideoDateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingVideoDateListViewController.h; sourceTree = "<group>"; };
+		BFABDB7C1B2841710053DDDB /* MeetingVideoDateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingVideoDateListViewController.m; sourceTree = "<group>"; };
+		BFABDB7F1B2842500053DDDB /* MeetingVideoDateListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingVideoDateListItem.h; sourceTree = "<group>"; };
+		BFABDB801B2842500053DDDB /* MeetingVideoDateListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingVideoDateListItem.m; sourceTree = "<group>"; };
+		BFABDB821B2847750053DDDB /* MeetingCategoryListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingCategoryListController.h; sourceTree = "<group>"; };
+		BFABDB831B2847760053DDDB /* MeetingCategoryListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingCategoryListController.m; sourceTree = "<group>"; };
+		BFABDB851B28478F0053DDDB /* MeetingCategoryListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingCategoryListItem.h; sourceTree = "<group>"; };
+		BFABDB861B28478F0053DDDB /* MeetingCategoryListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingCategoryListItem.m; sourceTree = "<group>"; };
+		BFABDB8B1B2849180053DDDB /* MeetingVideoListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingVideoListItem.h; sourceTree = "<group>"; };
+		BFABDB8C1B2849180053DDDB /* MeetingVideoListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingVideoListItem.m; sourceTree = "<group>"; };
+		BFABDB8E1B2849300053DDDB /* MeetingVideoListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingVideoListController.h; sourceTree = "<group>"; };
+		BFABDB8F1B2849300053DDDB /* MeetingVideoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingVideoListController.m; sourceTree = "<group>"; };
+		BFABDB911B284F100053DDDB /* MeetingVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingVideoController.h; sourceTree = "<group>"; };
+		BFABDB921B284F100053DDDB /* MeetingVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingVideoController.m; sourceTree = "<group>"; };
 		BFD164081B27FE2600BABD09 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		BFD164091B27FE2600BABD09 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		BFD164301B28000B00BABD09 /* LTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTableViewCell.h; sourceTree = "<group>"; };
@@ -134,6 +158,8 @@
 		BF4800971B27F2D8007046B9 /* CSAcademy */ = {
 			isa = PBXGroup;
 			children = (
+				BFABDB7E1B2842090053DDDB /* Model */,
+				BFABDB771B2840210053DDDB /* Helper */,
 				BFD1642F1B28000B00BABD09 /* Base */,
 				BFABDB681B2803C00053DDDB /* Controller */,
 				BFABDB691B2803D70053DDDB /* Source */,
@@ -145,7 +171,6 @@
 		BF4800981B27F2D8007046B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFD164411B2800C300BABD09 /* CSAcademy-prefix.pch */,
 				BF4800991B27F2D8007046B9 /* Info.plist */,
 				BF48009A1B27F2D8007046B9 /* main.m */,
 			);
@@ -172,14 +197,10 @@
 		BFABDB681B2803C00053DDDB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BF48009F1B27F2D8007046B9 /* HomeViewController.h */,
-				BF4800A01B27F2D8007046B9 /* HomeViewController.m */,
-				BF4800A21B27F2D8007046B9 /* MessageViewController.h */,
-				BF4800A31B27F2D8007046B9 /* MessageViewController.m */,
-				BFD164081B27FE2600BABD09 /* MyViewController.h */,
-				BFD164091B27FE2600BABD09 /* MyViewController.m */,
-				BFABDB651B2803B50053DDDB /* LoginViewController.h */,
-				BFABDB661B2803B50053DDDB /* LoginViewController.m */,
+				BFABDB941B286F4E0053DDDB /* HomeViewController */,
+				BFABDB961B286F8F0053DDDB /* MessageViewController */,
+				BFABDB971B286FBD0053DDDB /* MyViewController */,
+				BFABDB981B286FD00053DDDB /* LoginViewController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -187,6 +208,7 @@
 		BFABDB691B2803D70053DDDB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BFD164411B2800C300BABD09 /* CSAcademy-prefix.pch */,
 				BF48009C1B27F2D8007046B9 /* AppDelegate.h */,
 				BF48009D1B27F2D8007046B9 /* AppDelegate.m */,
 				BF4800A51B27F2D8007046B9 /* Main.storyboard */,
@@ -208,6 +230,80 @@
 				BFABDB711B2816880053DDDB /* YDNetworkRequestOperation.m */,
 			);
 			path = YDNetwork;
+			sourceTree = "<group>";
+		};
+		BFABDB771B2840210053DDDB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BFABDB781B2840360053DDDB /* AES128Util.h */,
+				BFABDB791B2840360053DDDB /* AES128Util.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		BFABDB7E1B2842090053DDDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFABDB7F1B2842500053DDDB /* MeetingVideoDateListItem.h */,
+				BFABDB801B2842500053DDDB /* MeetingVideoDateListItem.m */,
+				BFABDB851B28478F0053DDDB /* MeetingCategoryListItem.h */,
+				BFABDB861B28478F0053DDDB /* MeetingCategoryListItem.m */,
+				BFABDB8B1B2849180053DDDB /* MeetingVideoListItem.h */,
+				BFABDB8C1B2849180053DDDB /* MeetingVideoListItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BFABDB941B286F4E0053DDDB /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFABDB951B286F770053DDDB /* DetailVC */,
+				BF48009F1B27F2D8007046B9 /* HomeViewController.h */,
+				BF4800A01B27F2D8007046B9 /* HomeViewController.m */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		BFABDB951B286F770053DDDB /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				BFABDB821B2847750053DDDB /* MeetingCategoryListController.h */,
+				BFABDB831B2847760053DDDB /* MeetingCategoryListController.m */,
+				BFABDB7B1B2841710053DDDB /* MeetingVideoDateListViewController.h */,
+				BFABDB7C1B2841710053DDDB /* MeetingVideoDateListViewController.m */,
+				BFABDB8E1B2849300053DDDB /* MeetingVideoListController.h */,
+				BFABDB8F1B2849300053DDDB /* MeetingVideoListController.m */,
+				BFABDB911B284F100053DDDB /* MeetingVideoController.h */,
+				BFABDB921B284F100053DDDB /* MeetingVideoController.m */,
+			);
+			name = DetailVC;
+			sourceTree = "<group>";
+		};
+		BFABDB961B286F8F0053DDDB /* MessageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF4800A21B27F2D8007046B9 /* MessageViewController.h */,
+				BF4800A31B27F2D8007046B9 /* MessageViewController.m */,
+			);
+			name = MessageViewController;
+			sourceTree = "<group>";
+		};
+		BFABDB971B286FBD0053DDDB /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFD164081B27FE2600BABD09 /* MyViewController.h */,
+				BFD164091B27FE2600BABD09 /* MyViewController.m */,
+			);
+			name = MyViewController;
+			sourceTree = "<group>";
+		};
+		BFABDB981B286FD00053DDDB /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFABDB651B2803B50053DDDB /* LoginViewController.h */,
+				BFABDB661B2803B50053DDDB /* LoginViewController.m */,
+			);
+			name = LoginViewController;
 			sourceTree = "<group>";
 		};
 		BFD1642F1B28000B00BABD09 /* Base */ = {
@@ -376,17 +472,25 @@
 				BF4800A41B27F2D8007046B9 /* MessageViewController.m in Sources */,
 				BF48009E1B27F2D8007046B9 /* AppDelegate.m in Sources */,
 				BFD1640A1B27FE2600BABD09 /* MyViewController.m in Sources */,
+				BFABDB841B2847760053DDDB /* MeetingCategoryListController.m in Sources */,
 				BFD164401B28000C00BABD09 /* UIView+Sizes.m in Sources */,
+				BFABDB871B28478F0053DDDB /* MeetingCategoryListItem.m in Sources */,
 				BF4800A11B27F2D8007046B9 /* HomeViewController.m in Sources */,
 				BFABDB741B2816880053DDDB /* YDNetworkRequestOperation.m in Sources */,
 				BFD1643F1B28000C00BABD09 /* LViewController.m in Sources */,
 				BFD1643E1B28000C00BABD09 /* LTableViewController.m in Sources */,
+				BFABDB7D1B2841710053DDDB /* MeetingVideoDateListViewController.m in Sources */,
 				BFD1643D1B28000C00BABD09 /* LTableViewCellItem.m in Sources */,
+				BFABDB8D1B2849180053DDDB /* MeetingVideoListItem.m in Sources */,
+				BFABDB901B2849300053DDDB /* MeetingVideoListController.m in Sources */,
 				BFABDB731B2816880053DDDB /* YDNetworkManager.m in Sources */,
+				BFABDB931B284F100053DDDB /* MeetingVideoController.m in Sources */,
 				BFD1643C1B28000C00BABD09 /* LTableViewCell.m in Sources */,
 				BFABDB671B2803B50053DDDB /* LoginViewController.m in Sources */,
+				BFABDB811B2842500053DDDB /* MeetingVideoDateListItem.m in Sources */,
 				BFABDB721B2816880053DDDB /* YDDownloadRequestOperation.m in Sources */,
 				BF48009B1B27F2D8007046B9 /* main.m in Sources */,
+				BFABDB7A1B2840360053DDDB /* AES128Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

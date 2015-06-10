@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "LoginViewController.h"
+#import "MeetingCategoryListController.h"
 
 @interface HomeViewController ()
 
@@ -19,9 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
     self.tableView.tableFooterView = self.bottomView;
-    [self performSelector:@selector(popupLoginVC) withObject:nil afterDelay:2];
+    [self performSelector:@selector(popupLoginVC) withObject:nil afterDelay:0];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 }
 
 - (void)popupLoginVC
@@ -36,5 +43,11 @@
     }
 }
 
+- (IBAction)meetingPressed:(id)sender
+{
+    MeetingCategoryListController *vc = [[MeetingCategoryListController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

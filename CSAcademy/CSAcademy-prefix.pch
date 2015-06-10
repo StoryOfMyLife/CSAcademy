@@ -14,5 +14,6 @@
 #import "JSONModel.h"
 #import "ReactiveCocoa.h"
 #import "YDNetworking.h"
+#import "AES128Util.h"
 
 #endif
