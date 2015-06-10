@@ -1,0 +1,18 @@
+//
+//  CSAcademy-prefix.pch
+//  CSAcademy
+//
+//  Created by 刘廷勇 on 15/6/10.
+//  Copyright (c) 2015年 liuty. All rights reserved.
+//
+
+#ifndef CSAcademy_CSAcademy_prefix_pch
+#define CSAcademy_CSAcademy_prefix_pch
+
+#import "MacroHelper.h"
+#import "Masonry.h"
+#import "JSONModel.h"
+#import "ReactiveCocoa.h"
+#import "YDNetworking.h"
+
+#endif

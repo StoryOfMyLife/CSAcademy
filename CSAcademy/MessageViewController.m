@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  SecondViewController.m
 //  CSAcademy
 //
 //  Created by 刘廷勇 on 15/6/10.
 //  Copyright (c) 2015年 liuty. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "MessageViewController.h"
 
-@interface FirstViewController ()
+@interface MessageViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation MessageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

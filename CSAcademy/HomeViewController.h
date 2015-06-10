@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FirstViewController.h
 //  CSAcademy
 //
 //  Created by 刘廷勇 on 15/6/10.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LViewController.h"
 
-@interface SecondViewController : UIViewController
+@interface HomeViewController : UITableViewController
 
 
 @end
