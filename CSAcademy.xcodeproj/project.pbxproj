@@ -637,12 +637,15 @@
 			baseConfigurationReference = 6E7DF50CA3CA969291699E8D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NetEase Youdao Information Technology (Beijing) Co. Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NetEase Youdao Information Technology (Beijing) Co. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CSAcademy/CSAcademy-prefix.pch";
 				INFOPLIST_FILE = CSAcademy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b70efc6-8e48-4fe3-bf02-cc51ed7fd003";
 			};
 			name = Debug;
 		};
@@ -651,6 +654,7 @@
 			baseConfigurationReference = 043FE39C9B40A090D6B92031 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NetEase Youdao Information Technology (Beijing) Co. Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NetEase Youdao Information Technology (Beijing) Co. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CSAcademy/CSAcademy-prefix.pch";
