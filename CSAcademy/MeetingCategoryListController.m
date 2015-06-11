@@ -20,29 +20,21 @@ static NSString *key = @"CogaDoctor/2015-05-30/v0.90/Shjz";
     [super viewDidLoad];
     self.title = @"视频分类";
     
-//    [[YDNetworkManager sharedManager] getJSONFromURL:url parameters:nil success:^(id responseObject) {
-//        Log(@"%@", responseObject);
-//        NSString *result = responseObject[@"json"];
-//        NSString *newResult = [AES128Util AES128Decrypt:result key:key];
-//        
-//        int i = 1;
-//    } failure:^(NSError *error) {
-//        
-//    }];
-    
-    [self reload];
+    [[YDNetworkManager sharedManager] getJSONFromURL:url parameters:nil success:^(id responseObject) {
+        NSString *newResult = [AES128Util AES128Decrypt:responseObject[@"json"] key:key];
+        MeetingCategoryModel *model = [[MeetingCategoryModel alloc] initWithString:newResult error:nil];
+        [self setupItems:model.items];
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
-- (void)reload
+- (void)setupItems:(NSArray *)items
 {
-    NSMutableArray *items = [NSMutableArray array];
-    for (NSInteger i = 10; i > 0; i--) {
-        NSString *date = [NSString stringWithFormat:@"视频%ld", (long)i];
-        MeetingCategoryListItem *item = [[MeetingCategoryListItem alloc] initWithDictionary:@{@"title" : date} error:nil];
-        [items addObject:item];
+    for (MeetingCategoryListItem *item in items) {
         [item applyActionBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
-            MeetingVideoDateListViewController *dateListVC = [[MeetingVideoDateListViewController alloc] init];
-            [self.navigationController pushViewController:dateListVC animated:YES];
+            MeetingVideoDateListViewController *vc = [[MeetingVideoDateListViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }];
     }
     self.items = @[items];

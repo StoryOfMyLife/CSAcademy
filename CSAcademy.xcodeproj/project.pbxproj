@@ -28,6 +28,8 @@
 		BFABDB8D1B2849180053DDDB /* MeetingVideoListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB8C1B2849180053DDDB /* MeetingVideoListItem.m */; };
 		BFABDB901B2849300053DDDB /* MeetingVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB8F1B2849300053DDDB /* MeetingVideoListController.m */; };
 		BFABDB931B284F100053DDDB /* MeetingVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB921B284F100053DDDB /* MeetingVideoController.m */; };
+		BFABDBAD1B28958A0053DDDB /* HomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDBAC1B28958A0053DDDB /* HomeCellItem.m */; };
+		BFABDBB31B28986A0053DDDB /* UITabBarController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDBB21B28986A0053DDDB /* UITabBarController+Rotate.m */; };
 		BFD1640A1B27FE2600BABD09 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164091B27FE2600BABD09 /* MyViewController.m */; };
 		BFD1643C1B28000C00BABD09 /* LTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164311B28000B00BABD09 /* LTableViewCell.m */; };
 		BFD1643D1B28000C00BABD09 /* LTableViewCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164331B28000B00BABD09 /* LTableViewCellItem.m */; };
@@ -90,6 +92,10 @@
 		BFABDB8F1B2849300053DDDB /* MeetingVideoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingVideoListController.m; sourceTree = "<group>"; };
 		BFABDB911B284F100053DDDB /* MeetingVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingVideoController.h; sourceTree = "<group>"; };
 		BFABDB921B284F100053DDDB /* MeetingVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingVideoController.m; sourceTree = "<group>"; };
+		BFABDBAB1B28958A0053DDDB /* HomeCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCellItem.h; sourceTree = "<group>"; };
+		BFABDBAC1B28958A0053DDDB /* HomeCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCellItem.m; sourceTree = "<group>"; };
+		BFABDBB11B28986A0053DDDB /* UITabBarController+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Rotate.h"; sourceTree = "<group>"; };
+		BFABDBB21B28986A0053DDDB /* UITabBarController+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Rotate.m"; sourceTree = "<group>"; };
 		BFD164081B27FE2600BABD09 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		BFD164091B27FE2600BABD09 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		BFD164301B28000B00BABD09 /* LTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTableViewCell.h; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 		BF4800971B27F2D8007046B9 /* CSAcademy */ = {
 			isa = PBXGroup;
 			children = (
+				BFABDBA51B2893AC0053DDDB /* View */,
 				BFABDB7E1B2842090053DDDB /* Model */,
 				BFABDB771B2840210053DDDB /* Helper */,
 				BFD1642F1B28000B00BABD09 /* Base */,
@@ -201,6 +208,8 @@
 				BFABDB961B286F8F0053DDDB /* MessageViewController */,
 				BFABDB971B286FBD0053DDDB /* MyViewController */,
 				BFABDB981B286FD00053DDDB /* LoginViewController */,
+				BFABDBB11B28986A0053DDDB /* UITabBarController+Rotate.h */,
+				BFABDBB21B28986A0053DDDB /* UITabBarController+Rotate.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -250,6 +259,8 @@
 				BFABDB861B28478F0053DDDB /* MeetingCategoryListItem.m */,
 				BFABDB8B1B2849180053DDDB /* MeetingVideoListItem.h */,
 				BFABDB8C1B2849180053DDDB /* MeetingVideoListItem.m */,
+				BFABDBAB1B28958A0053DDDB /* HomeCellItem.h */,
+				BFABDBAC1B28958A0053DDDB /* HomeCellItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,6 +315,13 @@
 				BFABDB661B2803B50053DDDB /* LoginViewController.m */,
 			);
 			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		BFABDBA51B2893AC0053DDDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		BFD1642F1B28000B00BABD09 /* Base */ = {
@@ -470,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4800A41B27F2D8007046B9 /* MessageViewController.m in Sources */,
+				BFABDBAD1B28958A0053DDDB /* HomeCellItem.m in Sources */,
 				BF48009E1B27F2D8007046B9 /* AppDelegate.m in Sources */,
 				BFD1640A1B27FE2600BABD09 /* MyViewController.m in Sources */,
 				BFABDB841B2847760053DDDB /* MeetingCategoryListController.m in Sources */,
@@ -482,6 +501,7 @@
 				BFABDB7D1B2841710053DDDB /* MeetingVideoDateListViewController.m in Sources */,
 				BFD1643D1B28000C00BABD09 /* LTableViewCellItem.m in Sources */,
 				BFABDB8D1B2849180053DDDB /* MeetingVideoListItem.m in Sources */,
+				BFABDBB31B28986A0053DDDB /* UITabBarController+Rotate.m in Sources */,
 				BFABDB901B2849300053DDDB /* MeetingVideoListController.m in Sources */,
 				BFABDB731B2816880053DDDB /* YDNetworkManager.m in Sources */,
 				BFABDB931B284F100053DDDB /* MeetingVideoController.m in Sources */,
@@ -620,6 +640,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CSAcademy/CSAcademy-prefix.pch";
 				INFOPLIST_FILE = CSAcademy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -630,11 +651,14 @@
 			baseConfigurationReference = 043FE39C9B40A090D6B92031 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NetEase Youdao Information Technology (Beijing) Co. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CSAcademy/CSAcademy-prefix.pch";
 				INFOPLIST_FILE = CSAcademy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b70efc6-8e48-4fe3-bf02-cc51ed7fd003";
 			};
 			name = Release;
 		};

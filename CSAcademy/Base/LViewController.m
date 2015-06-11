@@ -10,4 +10,9 @@
 
 @implementation LViewController
 
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
 @end

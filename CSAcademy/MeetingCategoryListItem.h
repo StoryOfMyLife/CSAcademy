@@ -8,12 +8,21 @@
 
 #import "LTableViewCellItem.h"
 
+@protocol MeetingCategoryListItem @end
+
 @interface MeetingCategoryListItem : LTableViewCellItem
 
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic) NSInteger categoryID;
 
 @end
 
 @interface MeetingCategoryListCell : LTableViewCell
+
+@end
+
+@interface MeetingCategoryModel : JSONModel
+
+@property (nonatomic, copy) NSArray<MeetingCategoryListItem> *items;
 
 @end

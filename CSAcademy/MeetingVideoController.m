@@ -21,12 +21,30 @@
     self.player.view.frame = self.videoContainer.bounds;
     self.player.view.playerControlsAutoHideTime = @10;
     [self.videoContainer addSubview:self.player.view];
+    [self playStream:[NSURL URLWithString:@"http://122.114.52.48:99/2015/5/30/uterus/video.m3u8"]];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
-    [self playStream:[NSURL URLWithString:@"http://122.114.52.48:99/2015/5/30/uterus/video.m3u8"]];
+    [super viewWillAppear:animated];
+    self.videoBottomConstraint.constant = self.view.height * 0.5;
+}
+
+#pragma mark - VKVideoPlayerControllerDelegate
+- (void)videoPlayer:(VKVideoPlayer*)videoPlayer didControlByEvent:(VKVideoPlayerControlEvent)event {
+    if (event == VKVideoPlayerControlEventTapDone) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (void)videoPlayer:(VKVideoPlayer *)videoPlayer didStartVideo:(id<VKVideoPlayerTrackProtocol>)track
+{
+    [self.player pauseContent];
 }
 
 - (void)playStream:(NSURL*)url
@@ -40,7 +58,7 @@
 {
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
         [self.navigationController setNavigationBarHidden:NO animated:YES];
-        self.videoBottomConstraint.constant = self.view.bounds.size.height/2;
+        self.videoBottomConstraint.constant = self.view.width * 0.5;
     } else {
         [self.navigationController setNavigationBarHidden:YES animated:YES];
         self.videoBottomConstraint.constant = 0;

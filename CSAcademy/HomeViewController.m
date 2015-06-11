@@ -50,4 +50,9 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
 @end

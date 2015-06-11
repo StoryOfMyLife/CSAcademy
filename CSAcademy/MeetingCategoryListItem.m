@@ -8,7 +8,26 @@
 
 #import "MeetingCategoryListItem.h"
 
+@implementation MeetingCategoryModel
+
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"Data.meeting" : @"items",
+                                                       }];
+}
+
+@end
+
 @implementation MeetingCategoryListItem
+
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"id" : @"categoryID",
+                                                       @"name" : @"title"
+                                                       }];
+}
 
 - (Class)cellClass
 {

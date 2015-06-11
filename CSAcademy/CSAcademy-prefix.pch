@@ -10,6 +10,7 @@
 #define CSAcademy_CSAcademy_prefix_pch
 
 #import "MacroHelper.h"
+#import "UIView+Sizes.h"
 #import "Masonry.h"
 #import "JSONModel.h"
 #import "ReactiveCocoa.h"
