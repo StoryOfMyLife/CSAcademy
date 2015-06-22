@@ -16,6 +16,7 @@
 		BF4800A91B27F2D8007046B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4800A81B27F2D8007046B9 /* Images.xcassets */; };
 		BF4800AC1B27F2D8007046B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4800AA1B27F2D8007046B9 /* LaunchScreen.xib */; };
 		BF4800B81B27F2D8007046B9 /* CSAcademyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4800B71B27F2D8007046B9 /* CSAcademyTests.m */; };
+		BF84DF8C1B388C1E003359EA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF84DF8B1B388C1E003359EA /* WebViewController.m */; };
 		BFABDB671B2803B50053DDDB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB661B2803B50053DDDB /* LoginViewController.m */; };
 		BFABDB721B2816880053DDDB /* YDDownloadRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB6C1B2816880053DDDB /* YDDownloadRequestOperation.m */; };
 		BFABDB731B2816880053DDDB /* YDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB6F1B2816880053DDDB /* YDNetworkManager.m */; };
@@ -67,6 +68,8 @@
 		BF4800B11B27F2D8007046B9 /* CSAcademyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSAcademyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4800B61B27F2D8007046B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF4800B71B27F2D8007046B9 /* CSAcademyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAcademyTests.m; sourceTree = "<group>"; };
+		BF84DF8A1B388C1E003359EA /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		BF84DF8B1B388C1E003359EA /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		BFABDB651B2803B50053DDDB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BFABDB661B2803B50053DDDB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BFABDB6B1B2816880053DDDB /* YDDownloadRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDDownloadRequestOperation.h; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				BFABDB951B286F770053DDDB /* DetailVC */,
 				BF48009F1B27F2D8007046B9 /* HomeViewController.h */,
 				BF4800A01B27F2D8007046B9 /* HomeViewController.m */,
+				BF84DF8A1B388C1E003359EA /* WebViewController.h */,
+				BF84DF8B1B388C1E003359EA /* WebViewController.m */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -508,6 +513,7 @@
 				BFD1643C1B28000C00BABD09 /* LTableViewCell.m in Sources */,
 				BFABDB671B2803B50053DDDB /* LoginViewController.m in Sources */,
 				BFABDB811B2842500053DDDB /* MeetingVideoDateListItem.m in Sources */,
+				BF84DF8C1B388C1E003359EA /* WebViewController.m in Sources */,
 				BFABDB721B2816880053DDDB /* YDDownloadRequestOperation.m in Sources */,
 				BF48009B1B27F2D8007046B9 /* main.m in Sources */,
 				BFABDB7A1B2840360053DDDB /* AES128Util.m in Sources */,

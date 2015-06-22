@@ -9,10 +9,9 @@
 #import "HomeViewController.h"
 #import "LoginViewController.h"
 #import "MeetingCategoryListController.h"
+#import "WebViewController.h"
 
 @interface HomeViewController ()
-
-@property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 @end
 
@@ -21,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.tableView.tableFooterView = self.bottomView;
     BOOL login = [[NSUserDefaults standardUserDefaults] boolForKey:@"login"];
     if (!login) {
         [self performSelector:@selector(popupLoginVC) withObject:nil afterDelay:0];
@@ -40,8 +38,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"popLogin"]) {
-    
+    if ([segue.identifier isEqualToString:@"push6"]) {
+        WebViewController *vc = segue.destinationViewController;
+        vc.url = @"http://tisc.mediwelcome.com/custom/XueShuWeiYuan#";
+    } else if ([segue.identifier isEqualToString:@"push7"]) {
+        WebViewController *vc = segue.destinationViewController;
+        vc.url = @"http://tisc.mediwelcome.com/custom/WangJieHuiGu";
+    } else if ([segue.identifier isEqualToString:@"push8"]) {
+        WebViewController *vc = segue.destinationViewController;
+        vc.url = @"http://tisc.mediwelcome.com/custom/JiaoYuXueFen#";
     }
 }
 
