@@ -28,6 +28,8 @@
 {
     [super viewWillAppear:animated];
     self.videoBottomConstraint.constant = self.view.height * 0.5;
+    self.author.text = self.model.speaker;
+    self.content.text = self.model.desc;
 }
 
 #pragma mark - VKVideoPlayerControllerDelegate

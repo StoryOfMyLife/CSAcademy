@@ -10,4 +10,6 @@
 
 @interface MeetingVideoDateListViewController : LTableViewController
 
+@property (nonatomic, copy) NSString *categoryID;
+
 @end

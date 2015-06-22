@@ -8,8 +8,11 @@
 
 #import "LViewController.h"
 #import "VKVideoPlayer.h"
+#import "MeetingVideoListItem.h"
 
 @interface MeetingVideoController : LViewController <VKVideoPlayerDelegate>
+
+@property (nonatomic, strong) MeetingVideoListItem *model;
 
 @property (weak, nonatomic) IBOutlet UIView *videoContainer;
 

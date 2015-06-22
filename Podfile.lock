@@ -50,6 +50,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
   - VKFoundation (0.1.1):
     - CocoaLumberjack (~> 1.7.0)
     - DTCoreText (~> 1.6.11)
@@ -67,6 +70,7 @@ DEPENDENCIES:
   - Masonry
   - Reachability (~> 3.1.1)
   - ReactiveCocoa
+  - SDWebImage (~> 3.7.2)
   - VKVideoPlayer (~> 0.1.4)
 
 SPEC CHECKSUMS:
@@ -80,7 +84,8 @@ SPEC CHECKSUMS:
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   VKFoundation: a3d26de016870f705a256c5c6dbab57865c4e99a
   VKVideoPlayer: 75d0c44d8cd208dd01ae397d2e75c52cfc51dd19
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.35.0

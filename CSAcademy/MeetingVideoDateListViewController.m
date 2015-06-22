@@ -10,6 +10,8 @@
 #import "MeetingVideoDateListItem.h"
 #import "MeetingVideoListController.h"
 
+static NSString *url = @"http://116.255.187.20:8088/ChinaStroke/video/meeting";
+
 @implementation MeetingVideoDateListViewController
 
 - (void)viewDidLoad
@@ -18,14 +20,21 @@
     
     self.title = @"会议视频";
     
-    NSMutableArray *items = [NSMutableArray array];
-    for (NSInteger i = 10; i > 0; i--) {
-        NSString *date = [NSString stringWithFormat:@"2015年6月%ld号", (long)i];
-        MeetingVideoDateListItem *item = [[MeetingVideoDateListItem alloc] initWithDictionary:@{@"dateInfo" : date} error:nil];
-        [items addObject:item];
-        [item applyActionBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
+    [[YDNetworkManager sharedManager] getJSONFromURL:url parameters:@{@"currentPage" : @"1", @"pageSize" : @"10", @"meetingStr" : self.categoryID} success:^(id responseObject) {
+        MeetingVideoDateListModel *model = [[MeetingVideoDateListModel alloc] initWithDictionary:responseObject error:nil];
+        [self setupItems:model.items];
+    } failure:^(NSError *error) {
+        
+    }];
+}
 
+- (void)setupItems:(NSArray *)items
+{
+    for (MeetingVideoDateListItem *item in items) {
+        [item applyActionBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
             MeetingVideoListController *vc = [[MeetingVideoListController alloc] init];
+            vc.meetingId = @"1";//item.meetingId;
+            vc.dayId = @"1";//self.categoryID;
             [self.navigationController pushViewController:vc animated:YES];
         }];
     }

@@ -10,4 +10,7 @@
 
 @interface MeetingVideoListController : LTableViewController
 
+@property (nonatomic, copy) NSString *meetingId;
+@property (nonatomic, copy) NSString *dayId;
+
 @end

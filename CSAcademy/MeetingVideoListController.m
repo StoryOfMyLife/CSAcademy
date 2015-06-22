@@ -10,6 +10,8 @@
 #import "MeetingVideoListItem.h"
 #import "MeetingVideoController.h"
 
+static NSString *url = @"http://116.255.187.20:8088/ChinaStroke/video/recordVideos";
+
 @implementation MeetingVideoListController
 
 - (void)viewDidLoad
@@ -18,14 +20,21 @@
     
     self.title = @"视频列表";
     
-    NSMutableArray *items = [NSMutableArray array];
-    for (NSInteger i = 10; i > 0; i--) {
-        NSString *date = [NSString stringWithFormat:@"视频%ld", (long)i];
-        MeetingVideoListItem *item = [[MeetingVideoListItem alloc] initWithDictionary:@{@"title" : date} error:nil];
-        [items addObject:item];
+    [[YDNetworkManager sharedManager] getJSONFromURL:url parameters:@{@"currentPage" : @"1", @"pageSize" : @"10", @"meetingId" : self.meetingId, @"dayId" : self.dayId} success:^(id responseObject) {
+        MeetingVideoListModel *model = [[MeetingVideoListModel alloc] initWithDictionary:responseObject error:nil];
+        [self setupItems:model.items];
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
+- (void)setupItems:(NSArray *)items
+{
+    for (MeetingVideoListItem *item in items) {
         [item applyActionBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
             UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             MeetingVideoController *vc = [sb instantiateViewControllerWithIdentifier:@"MeetingVideoController"];
+            vc.model = item;
             [self.navigationController pushViewController:vc animated:YES];
         }];
     }

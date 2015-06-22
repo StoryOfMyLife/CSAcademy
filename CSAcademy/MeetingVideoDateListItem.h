@@ -8,12 +8,21 @@
 
 #import "LTableViewCellItem.h"
 
+@protocol MeetingVideoDateListItem @end
+
 @interface MeetingVideoDateListItem : LTableViewCellItem
 
-@property (nonatomic, copy) NSString *dateInfo;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *meetingId;
 
 @end
 
 @interface MeetingVideoDateListCell : LTableViewCell
+
+@end
+
+@interface MeetingVideoDateListModel : JSONModel
+
+@property (nonatomic, strong) NSArray<MeetingVideoDateListItem> *items;
 
 @end

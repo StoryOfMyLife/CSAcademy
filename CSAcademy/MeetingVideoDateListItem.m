@@ -8,7 +8,26 @@
 
 #import "MeetingVideoDateListItem.h"
 
+@implementation MeetingVideoDateListModel
+
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"data.meetings" : @"items",
+                                                       }];
+}
+
+@end
+
 @implementation MeetingVideoDateListItem
+
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"id" : @"meetingId",
+                                                       @"name" : @"title"
+                                                       }];
+}
 
 - (Class)cellClass
 {
@@ -30,7 +49,7 @@
 {
     [super setCellItem:cellItem];
     [self setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-    self.textLabel.text = cellItem.dateInfo;
+    self.textLabel.text = cellItem.title;
 }
 
 @end

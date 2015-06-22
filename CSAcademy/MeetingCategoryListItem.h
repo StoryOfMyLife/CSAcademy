@@ -13,7 +13,8 @@
 @interface MeetingCategoryListItem : LTableViewCellItem
 
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic) NSInteger categoryID;
+@property (nonatomic, copy) NSString *meetingId;
+@property (nonatomic, copy) NSString *categoryID;
 
 @end
 
