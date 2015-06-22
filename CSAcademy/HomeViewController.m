@@ -20,10 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+
     self.tableView.tableFooterView = self.bottomView;
-    [self performSelector:@selector(popupLoginVC) withObject:nil afterDelay:0];
+    BOOL login = [[NSUserDefaults standardUserDefaults] boolForKey:@"login"];
+    if (!login) {
+        [self performSelector:@selector(popupLoginVC) withObject:nil afterDelay:0];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated

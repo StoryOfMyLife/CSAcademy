@@ -320,6 +320,9 @@
                                 <state key="normal" title="Login in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="login:" destination="b0B-Gk-dvV" eventType="touchUpInside" id="7ft-Fh-qpI"/>
                                 </connections>
@@ -384,6 +387,11 @@
                             <constraint firstItem="w7a-dE-PVg" firstAttribute="centerY" secondItem="jW4-WD-kII" secondAttribute="centerY" id="zZk-7D-Mci"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="FgF-B4-Bza" id="saM-Ff-q8u"/>
+                        <outlet property="password" destination="w5o-2W-pIt" id="QfE-X6-dLC"/>
+                        <outlet property="username" destination="w7a-dE-PVg" id="Cns-uN-GrX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R84-74-eb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

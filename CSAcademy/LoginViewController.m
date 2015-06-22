@@ -8,7 +8,13 @@
 
 #import "LoginViewController.h"
 
-static NSString const *loginURL = @"http://122.114.52.48:8088/COGADoctorServer/user/login";
+static NSString *loginURL = @"http://116.255.187.20:8088/ChinaStroke/user/Login";
+
+@interface LoginViewController ()
+
+@property (nonatomic) BOOL loginSuccess;
+
+@end
 
 @implementation LoginViewController
 
@@ -19,6 +25,34 @@ static NSString const *loginURL = @"http://122.114.52.48:8088/COGADoctorServer/u
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
     tapGesture.numberOfTapsRequired = 1;
     [self.view addGestureRecognizer:tapGesture];
+    
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    RAC(self.loginButton, enabled) = [RACSignal combineLatest:@[self.username.rac_textSignal, self.password.rac_textSignal] reduce:(id)^(NSString *username, NSString *password){
+        return @([username isEqualToString:@"010999999"] && password.length == 11);
+    }];
+    
+    [RACObserve(self, loginSuccess) subscribeNext:^(NSNumber *loginSuccess) {
+        if ([loginSuccess boolValue]) {
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"login"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            [self dismissViewControllerAnimated:YES completion:NULL];
+        } else if (self.loginButton.isEnabled){
+            self.password.backgroundColor = [UIColor redColor];
+            [self performSelector:@selector(changeLabelColorBack) withObject:nil afterDelay:2];
+        }
+    }];
+}
+
+- (void)changeLabelColorBack
+{
+    [UIView animateWithDuration:.3 animations:^{
+        self.password.backgroundColor = [UIColor whiteColor];
+    }];
 }
 
 - (void)tap:(id)sender
@@ -28,7 +62,16 @@ static NSString const *loginURL = @"http://122.114.52.48:8088/COGADoctorServer/u
 
 - (IBAction)login:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [[YDNetworkManager sharedManager] getJSONFromURL:loginURL parameters:@{@"username" : self.username.text, @"password" : self.password.text} success:^(id responseObject) {
+        NSString *retCode = responseObject[@"retCode"];
+        if ([retCode isEqualToString:@"200"]) {
+            self.loginSuccess = YES;
+        } else {
+            self.loginSuccess = NO;
+        }
+    } failure:^(NSError *error) {
+        self.loginSuccess = NO;
+    }];
 }
 
 @end
