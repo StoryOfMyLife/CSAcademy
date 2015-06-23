@@ -477,7 +477,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IM8-X0-VDE" userLabel="buttonsView">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFW-D5-4es">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFW-D5-4es" userLabel="会议">
                                                             <rect key="frame" x="35" y="15" width="59" height="60"/>
                                                             <state key="normal" image="会议视频图标">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -486,7 +486,7 @@
                                                                 <action selector="meetingPressed:" destination="ss7-M3-LkV" eventType="touchUpInside" id="kUe-Kx-Etf"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12r-7s-Hmg">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12r-7s-Hmg" userLabel="文献">
                                                             <rect key="frame" x="131" y="15" width="59" height="60"/>
                                                             <state key="normal" image="文献速览图标">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -495,11 +495,14 @@
                                                                 <action selector="bookPressed:" destination="ss7-M3-LkV" eventType="touchUpInside" id="ccg-yr-Da8"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF6-7O-E5J">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF6-7O-E5J" userLabel="基础">
                                                             <rect key="frame" x="227" y="15" width="59" height="60"/>
                                                             <state key="normal" image="基础培训图标">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <segue destination="We3-Ht-mqR" kind="push" id="8no-Gv-2QP"/>
+                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会议视频" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bex-3m-3pQ">
                                                             <rect key="frame" x="30" y="80" width="68" height="21"/>
@@ -519,23 +522,32 @@
                                                             <color key="textColor" red="0.090196078430000007" green="0.35294117650000001" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-Sf-deg">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-Sf-deg" userLabel="移动">
                                                             <rect key="frame" x="35" y="106" width="59" height="60"/>
                                                             <state key="normal" image="移动查房图标">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <segue destination="We3-Ht-mqR" kind="push" id="EZs-P2-uHw"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gt-7k-PIb">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gt-7k-PIb" userLabel="网络">
                                                             <rect key="frame" x="131" y="106" width="59" height="60"/>
                                                             <state key="normal" image="网络会议图标">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <segue destination="We3-Ht-mqR" kind="push" id="MSH-Do-JDa"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-me-v2K">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-me-v2K" userLabel="国际">
                                                             <rect key="frame" x="227" y="106" width="59" height="60"/>
                                                             <state key="normal" image="国际在线图标">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <segue destination="We3-Ht-mqR" kind="push" id="TL0-jf-gfH"/>
+                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="移动查房" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg4-2z-R9Z">
                                                             <rect key="frame" x="30" y="171" width="68" height="21"/>
@@ -1006,6 +1018,37 @@
             </objects>
             <point key="canvasLocation" x="2147" y="-301"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="vQ6-Mx-kQe">
+            <objects>
+                <viewController id="We3-Ht-mqR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q4a-SG-eWC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dfw-67-eqj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zT1-yG-txR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="精彩内容，敬请期待" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AU6-lR-UC0">
+                                <rect key="frame" x="84" y="273" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AU6-lR-UC0" firstAttribute="centerX" secondItem="zT1-yG-txR" secondAttribute="centerX" id="MfJ-bC-6be"/>
+                            <constraint firstAttribute="centerY" secondItem="AU6-lR-UC0" secondAttribute="centerY" constant="0.5" id="Qn9-Wg-Caj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M2z-ig-fS2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70B-bw-ydb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="-953"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="nKq-cd-r0k">
             <objects>
@@ -1314,6 +1357,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="kDn-hl-cZo"/>
-        <segue reference="6tl-Eb-HBV"/>
+        <segue reference="R0M-96-zIV"/>
+        <segue reference="TL0-jf-gfH"/>
     </inferredMetricsTieBreakers>
 </document>
