@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7A522FB6A0307B3CBA780C72 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EEBC85A4EE22BED16B3133 /* libPods.a */; };
+		BF31B38E1B394CAE00447EB9 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF31B38D1B394CAE00447EB9 /* SettingViewController.m */; };
+		BF31B3911B39546D00447EB9 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF31B3901B39546D00447EB9 /* HelpViewController.m */; };
 		BF48009B1B27F2D8007046B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF48009A1B27F2D8007046B9 /* main.m */; };
 		BF48009E1B27F2D8007046B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF48009D1B27F2D8007046B9 /* AppDelegate.m */; };
 		BF4800A11B27F2D8007046B9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4800A01B27F2D8007046B9 /* HomeViewController.m */; };
@@ -53,6 +55,10 @@
 		043FE39C9B40A090D6B92031 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		37EEBC85A4EE22BED16B3133 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7DF50CA3CA969291699E8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BF31B38C1B394CAE00447EB9 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		BF31B38D1B394CAE00447EB9 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		BF31B38F1B39546D00447EB9 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		BF31B3901B39546D00447EB9 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		BF4800951B27F2D8007046B9 /* CSAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4800991B27F2D8007046B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF48009A1B27F2D8007046B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +150,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BF31B38B1B394C9700447EB9 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF31B38C1B394CAE00447EB9 /* SettingViewController.h */,
+				BF31B38D1B394CAE00447EB9 /* SettingViewController.m */,
+				BF31B38F1B39546D00447EB9 /* HelpViewController.h */,
+				BF31B3901B39546D00447EB9 /* HelpViewController.m */,
+			);
+			name = SettingViewController;
+			sourceTree = "<group>";
+		};
 		BF48008C1B27F2D8007046B9 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +224,7 @@
 		BFABDB681B2803C00053DDDB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF31B38B1B394C9700447EB9 /* SettingViewController */,
 				BFABDB941B286F4E0053DDDB /* HomeViewController */,
 				BFABDB961B286F8F0053DDDB /* MessageViewController */,
 				BFABDB971B286FBD0053DDDB /* MyViewController */,
@@ -408,6 +426,7 @@
 				TargetAttributes = {
 					BF4800941B27F2D8007046B9 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HUW3H8NBU9;
 					};
 					BF4800B01B27F2D8007046B9 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -507,6 +526,8 @@
 				BFD1643D1B28000C00BABD09 /* LTableViewCellItem.m in Sources */,
 				BFABDB8D1B2849180053DDDB /* MeetingVideoListItem.m in Sources */,
 				BFABDBB31B28986A0053DDDB /* UITabBarController+Rotate.m in Sources */,
+				BF31B38E1B394CAE00447EB9 /* SettingViewController.m in Sources */,
+				BF31B3911B39546D00447EB9 /* HelpViewController.m in Sources */,
 				BFABDB901B2849300053DDDB /* MeetingVideoListController.m in Sources */,
 				BFABDB731B2816880053DDDB /* YDNetworkManager.m in Sources */,
 				BFABDB931B284F100053DDDB /* MeetingVideoController.m in Sources */,
@@ -643,15 +664,15 @@
 			baseConfigurationReference = 6E7DF50CA3CA969291699E8D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guo meisong (YWG37ZD2UL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CSAcademy/CSAcademy-prefix.pch";
 				INFOPLIST_FILE = CSAcademy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "db5aea14-2cea-4da2-acf0-b709f73b79dd";
 			};
 			name = Debug;
 		};
@@ -660,8 +681,8 @@
 			baseConfigurationReference = 043FE39C9B40A090D6B92031 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CSAcademy/CSAcademy-prefix.pch";
 				INFOPLIST_FILE = CSAcademy/Info.plist;

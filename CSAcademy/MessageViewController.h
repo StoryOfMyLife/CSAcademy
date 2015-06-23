@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LViewController.h"
 
-@interface MessageViewController : LViewController
+@interface MessageViewController : UITableViewController
 
 
 @end
