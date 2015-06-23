@@ -34,11 +34,6 @@
     return [MeetingVideoDateListCell class];
 }
 
-- (CGFloat)heightForTableView:(UITableView *)tableView
-{
-    return 44;
-}
-
 @end
 
 @implementation MeetingVideoDateListCell

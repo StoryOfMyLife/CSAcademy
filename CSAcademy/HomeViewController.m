@@ -10,6 +10,7 @@
 #import "LoginViewController.h"
 #import "MeetingCategoryListController.h"
 #import "WebViewController.h"
+#import "BookListViewController.h"
 
 @interface HomeViewController ()
 
@@ -119,6 +120,13 @@
 - (IBAction)meetingPressed:(id)sender
 {
     MeetingCategoryListController *vc = [[MeetingCategoryListController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)bookPressed:(id)sender
+{
+    BookListViewController *vc = [[BookListViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }

@@ -33,6 +33,10 @@
 		BFABDB931B284F100053DDDB /* MeetingVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDB921B284F100053DDDB /* MeetingVideoController.m */; };
 		BFABDBAD1B28958A0053DDDB /* HomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDBAC1B28958A0053DDDB /* HomeCellItem.m */; };
 		BFABDBB31B28986A0053DDDB /* UITabBarController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDBB21B28986A0053DDDB /* UITabBarController+Rotate.m */; };
+		BFCF70911B39CD1200DA3C69 /* BookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70901B39CD1200DA3C69 /* BookListViewController.m */; };
+		BFCF70941B39CDA600DA3C69 /* BookListCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70931B39CDA600DA3C69 /* BookListCellItem.m */; };
+		BFCF70971B39D3A800DA3C69 /* BookDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70961B39D3A800DA3C69 /* BookDetailModel.m */; };
+		BFCF709A1B39D9F200DA3C69 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70991B39D9F200DA3C69 /* BookDetailViewController.m */; };
 		BFD1640A1B27FE2600BABD09 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164091B27FE2600BABD09 /* MyViewController.m */; };
 		BFD1643C1B28000C00BABD09 /* LTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164311B28000B00BABD09 /* LTableViewCell.m */; };
 		BFD1643D1B28000C00BABD09 /* LTableViewCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164331B28000B00BABD09 /* LTableViewCellItem.m */; };
@@ -105,6 +109,14 @@
 		BFABDBAC1B28958A0053DDDB /* HomeCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCellItem.m; sourceTree = "<group>"; };
 		BFABDBB11B28986A0053DDDB /* UITabBarController+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Rotate.h"; sourceTree = "<group>"; };
 		BFABDBB21B28986A0053DDDB /* UITabBarController+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Rotate.m"; sourceTree = "<group>"; };
+		BFCF708F1B39CD1200DA3C69 /* BookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListViewController.h; sourceTree = "<group>"; };
+		BFCF70901B39CD1200DA3C69 /* BookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListViewController.m; sourceTree = "<group>"; };
+		BFCF70921B39CDA600DA3C69 /* BookListCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCellItem.h; sourceTree = "<group>"; };
+		BFCF70931B39CDA600DA3C69 /* BookListCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCellItem.m; sourceTree = "<group>"; };
+		BFCF70951B39D3A800DA3C69 /* BookDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailModel.h; sourceTree = "<group>"; };
+		BFCF70961B39D3A800DA3C69 /* BookDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailModel.m; sourceTree = "<group>"; };
+		BFCF70981B39D9F200DA3C69 /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		BFCF70991B39D9F200DA3C69 /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
 		BFD164081B27FE2600BABD09 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		BFD164091B27FE2600BABD09 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		BFD164301B28000B00BABD09 /* LTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTableViewCell.h; sourceTree = "<group>"; };
@@ -282,6 +294,10 @@
 				BFABDB8C1B2849180053DDDB /* MeetingVideoListItem.m */,
 				BFABDBAB1B28958A0053DDDB /* HomeCellItem.h */,
 				BFABDBAC1B28958A0053DDDB /* HomeCellItem.m */,
+				BFCF70921B39CDA600DA3C69 /* BookListCellItem.h */,
+				BFCF70931B39CDA600DA3C69 /* BookListCellItem.m */,
+				BFCF70951B39D3A800DA3C69 /* BookDetailModel.h */,
+				BFCF70961B39D3A800DA3C69 /* BookDetailModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -289,7 +305,8 @@
 		BFABDB941B286F4E0053DDDB /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BFABDB951B286F770053DDDB /* DetailVC */,
+				BFCF708E1B39CCE100DA3C69 /* BookDetailVC */,
+				BFABDB951B286F770053DDDB /* MeetingDetailVC */,
 				BF48009F1B27F2D8007046B9 /* HomeViewController.h */,
 				BF4800A01B27F2D8007046B9 /* HomeViewController.m */,
 				BF84DF8A1B388C1E003359EA /* WebViewController.h */,
@@ -298,7 +315,7 @@
 			name = HomeViewController;
 			sourceTree = "<group>";
 		};
-		BFABDB951B286F770053DDDB /* DetailVC */ = {
+		BFABDB951B286F770053DDDB /* MeetingDetailVC */ = {
 			isa = PBXGroup;
 			children = (
 				BFABDB821B2847750053DDDB /* MeetingCategoryListController.h */,
@@ -310,7 +327,7 @@
 				BFABDB911B284F100053DDDB /* MeetingVideoController.h */,
 				BFABDB921B284F100053DDDB /* MeetingVideoController.m */,
 			);
-			name = DetailVC;
+			name = MeetingDetailVC;
 			sourceTree = "<group>";
 		};
 		BFABDB961B286F8F0053DDDB /* MessageViewController */ = {
@@ -345,6 +362,17 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BFCF708E1B39CCE100DA3C69 /* BookDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF708F1B39CD1200DA3C69 /* BookListViewController.h */,
+				BFCF70901B39CD1200DA3C69 /* BookListViewController.m */,
+				BFCF70981B39D9F200DA3C69 /* BookDetailViewController.h */,
+				BFCF70991B39D9F200DA3C69 /* BookDetailViewController.m */,
+			);
+			name = BookDetailVC;
 			sourceTree = "<group>";
 		};
 		BFD1642F1B28000B00BABD09 /* Base */ = {
@@ -532,10 +560,14 @@
 				BFABDB731B2816880053DDDB /* YDNetworkManager.m in Sources */,
 				BFABDB931B284F100053DDDB /* MeetingVideoController.m in Sources */,
 				BFD1643C1B28000C00BABD09 /* LTableViewCell.m in Sources */,
+				BFCF70941B39CDA600DA3C69 /* BookListCellItem.m in Sources */,
 				BFABDB671B2803B50053DDDB /* LoginViewController.m in Sources */,
 				BFABDB811B2842500053DDDB /* MeetingVideoDateListItem.m in Sources */,
 				BF84DF8C1B388C1E003359EA /* WebViewController.m in Sources */,
 				BFABDB721B2816880053DDDB /* YDDownloadRequestOperation.m in Sources */,
+				BFCF70911B39CD1200DA3C69 /* BookListViewController.m in Sources */,
+				BFCF70971B39D3A800DA3C69 /* BookDetailModel.m in Sources */,
+				BFCF709A1B39D9F200DA3C69 /* BookDetailViewController.m in Sources */,
 				BF48009B1B27F2D8007046B9 /* main.m in Sources */,
 				BFABDB7A1B2840360053DDDB /* AES128Util.m in Sources */,
 			);
@@ -682,14 +714,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NetEase Youdao Information Technology (Beijing) Co. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/CSAcademy/CSAcademy-prefix.pch";
 				INFOPLIST_FILE = CSAcademy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6b70efc6-8e48-4fe3-bf02-cc51ed7fd003";
 			};
 			name = Release;
 		};

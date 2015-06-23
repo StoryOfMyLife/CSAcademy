@@ -15,11 +15,6 @@
     return [HomeCell class];
 }
 
-- (CGFloat)heightForTableView:(UITableView *)tableView
-{
-    return 44;
-}
-
 @end
 
 @implementation HomeCell
