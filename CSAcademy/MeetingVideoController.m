@@ -21,7 +21,8 @@
     self.player.view.frame = self.videoContainer.bounds;
     self.player.view.playerControlsAutoHideTime = @10;
     [self.videoContainer addSubview:self.player.view];
-    [self playStream:[NSURL URLWithString:@"http://122.114.52.48:99/2015/5/30/uterus/video.m3u8"]];
+//    [self playStream:[NSURL URLWithString:@"http://122.114.52.48:99/2015/5/30/uterus/video.m3u8"]];
+    [self playStream:[NSURL URLWithString:self.model.urlios]];
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -33,8 +33,8 @@ static NSString *url = @"http://116.255.187.20:8088/ChinaStroke/video/meeting";
     for (MeetingVideoDateListItem *item in items) {
         [item applyActionBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
             MeetingVideoListController *vc = [[MeetingVideoListController alloc] init];
-            vc.meetingId = @"1";//item.meetingId;
-            vc.dayId = @"1";//self.categoryID;
+            vc.meetingId = item.meetingId;
+            vc.dayId = self.categoryID;
             [self.navigationController pushViewController:vc animated:YES];
         }];
     }

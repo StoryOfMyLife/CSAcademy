@@ -53,20 +53,20 @@
                         <sections>
                             <tableViewSection id="dbO-8b-YVS">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="rfk-UJ-1NY">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="170" id="rfk-UJ-1NY">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfk-UJ-1NY" id="ygh-sq-Klt">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="Fnw-yz-es0">
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvB-gw-5sP">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
-                                                </imageView>
+                                                </scrollView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Fnw-yz-es0" secondAttribute="trailing" id="A0F-WD-Axa"/>
-                                                <constraint firstAttribute="bottom" secondItem="Fnw-yz-es0" secondAttribute="bottom" id="ITS-Si-NVX"/>
-                                                <constraint firstItem="Fnw-yz-es0" firstAttribute="top" secondItem="ygh-sq-Klt" secondAttribute="top" id="VYG-oV-n46"/>
-                                                <constraint firstItem="Fnw-yz-es0" firstAttribute="leading" secondItem="ygh-sq-Klt" secondAttribute="leading" id="zfb-H3-jzw"/>
+                                                <constraint firstItem="ZvB-gw-5sP" firstAttribute="top" secondItem="ygh-sq-Klt" secondAttribute="top" id="aVq-cL-GNV"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZvB-gw-5sP" secondAttribute="bottom" id="kbu-SO-i1e"/>
+                                                <constraint firstItem="ZvB-gw-5sP" firstAttribute="leading" secondItem="ygh-sq-Klt" secondAttribute="leading" id="r28-5j-SrR"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZvB-gw-5sP" secondAttribute="trailing" id="yO5-DB-MRp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -332,7 +332,9 @@
                         <barButtonItem key="rightBarButtonItem" image="设置按钮" id="aui-jA-lUm"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="topScrollView" destination="ZvB-gw-5sP" id="tft-Gy-4LP"/>
                         <segue destination="b0B-Gk-dvV" kind="modal" identifier="popLogin" id="R0M-96-zIV"/>
+                        <segue destination="Eo0-rR-FPU" kind="push" identifier="topPush" id="Vcb-JW-Xcr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lH4-Hz-9dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -372,20 +374,23 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="演讲人:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFc-il-fnG">
                                 <rect key="frame" x="50" y="360" width="56" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="cxH-1W-cIV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFt-mC-hmj">
                                 <rect key="frame" x="50" y="392" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王五" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEM-Uc-EX4">
-                                <rect key="frame" x="114" y="360" width="34" height="21"/>
+                                <rect key="frame" x="114" y="360" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="关于。。。" translatesAutoresizingMaskIntoConstraints="NO" id="Pc7-gO-Vay">
@@ -414,6 +419,7 @@
                             <constraint firstItem="Pc7-gO-Vay" firstAttribute="trailing" secondItem="EDM-sm-Jko" secondAttribute="trailingMargin" id="lfs-br-q5n"/>
                             <constraint firstItem="Pc7-gO-Vay" firstAttribute="top" secondItem="fFt-mC-hmj" secondAttribute="bottom" constant="8" symbolic="YES" id="piz-eC-Rfg"/>
                             <constraint firstItem="9tT-sA-zPX" firstAttribute="top" secondItem="UDD-Ke-Ffw" secondAttribute="bottom" constant="228" id="sX9-Ed-dxE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZEM-Uc-EX4" secondAttribute="trailing" constant="10" id="t5L-WN-mSj"/>
                             <constraint firstItem="fFt-mC-hmj" firstAttribute="leading" secondItem="Pc7-gO-Vay" secondAttribute="leading" constant="-20" id="t64-kV-t4h"/>
                         </constraints>
                     </view>
@@ -625,7 +631,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="01" width="626" height="220"/>
         <image name="06" width="369" height="179"/>
         <image name="07" width="382" height="125"/>
         <image name="08" width="640" height="449"/>
@@ -649,6 +654,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="kDn-hl-cZo"/>
+        <segue reference="Vcb-JW-Xcr"/>
     </inferredMetricsTieBreakers>
 </document>
