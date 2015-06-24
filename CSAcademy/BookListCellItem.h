@@ -25,5 +25,6 @@
 @interface BookListCellModel : JSONModel
 
 @property (nonatomic, strong) NSArray<BookListCellItem> *items;
+@property (nonatomic) NSInteger totalPage;
 
 @end

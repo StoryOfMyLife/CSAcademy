@@ -14,7 +14,13 @@
 {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
                                                        @"data.articles" : @"items",
+                                                       @"data.totalPage" : @"totalPage"
                                                        }];
+}
+
++ (BOOL)propertyIsOptional:(NSString *)propertyName
+{
+    return YES;
 }
 
 @end
@@ -26,6 +32,11 @@
     return [[JSONKeyMapper alloc] initWithDictionary:@{
                                                        @"id" : @"articleId"
                                                        }];
+}
+
++ (BOOL)propertyIsOptional:(NSString *)propertyName
+{
+    return YES;
 }
 
 - (Class)cellClass

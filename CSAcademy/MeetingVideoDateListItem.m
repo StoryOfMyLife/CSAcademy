@@ -13,8 +13,13 @@
 + (JSONKeyMapper *)keyMapper
 {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
-                                                       @"data.meetings" : @"items",
+                                                       @"data.meetings" : @"items"
                                                        }];
+}
+
++ (BOOL)propertyIsOptional:(NSString *)propertyName
+{
+    return YES;
 }
 
 @end
@@ -27,6 +32,11 @@
                                                        @"id" : @"meetingId",
                                                        @"name" : @"title"
                                                        }];
+}
+
++ (BOOL)propertyIsOptional:(NSString *)propertyName
+{
+    return YES;
 }
 
 - (Class)cellClass
