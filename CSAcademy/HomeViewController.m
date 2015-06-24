@@ -12,6 +12,8 @@
 #import "WebViewController.h"
 #import "BookListViewController.h"
 
+#import "IntroViewController.h"
+
 @interface HomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *topScrollView;
@@ -47,6 +49,12 @@
                            @{@"image" : @"05",
                              @"url" : @"",
                              @"text" : @"旅游信息"}];
+    
+    BOOL showedIntro = [[NSUserDefaults standardUserDefaults] boolForKey:@"intro"];
+    if (!showedIntro) {
+        IntroViewController *introVC = [[IntroViewController alloc] init];
+        [[UIApplication sharedApplication].keyWindow addSubview:introVC.view];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated

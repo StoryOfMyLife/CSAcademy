@@ -37,6 +37,8 @@
 		BFCF70941B39CDA600DA3C69 /* BookListCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70931B39CDA600DA3C69 /* BookListCellItem.m */; };
 		BFCF70971B39D3A800DA3C69 /* BookDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70961B39D3A800DA3C69 /* BookDetailModel.m */; };
 		BFCF709A1B39D9F200DA3C69 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70991B39D9F200DA3C69 /* BookDetailViewController.m */; };
+		BFCF70A11B3A86C800DA3C69 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF70A01B3A86C800DA3C69 /* IntroViewController.m */; };
+		BFCF70A31B3AB33900DA3C69 /* IntroLastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFCF70A21B3AB33800DA3C69 /* IntroLastView.xib */; };
 		BFD1640A1B27FE2600BABD09 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164091B27FE2600BABD09 /* MyViewController.m */; };
 		BFD1643C1B28000C00BABD09 /* LTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164311B28000B00BABD09 /* LTableViewCell.m */; };
 		BFD1643D1B28000C00BABD09 /* LTableViewCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD164331B28000B00BABD09 /* LTableViewCellItem.m */; };
@@ -117,6 +119,9 @@
 		BFCF70961B39D3A800DA3C69 /* BookDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailModel.m; sourceTree = "<group>"; };
 		BFCF70981B39D9F200DA3C69 /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
 		BFCF70991B39D9F200DA3C69 /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		BFCF709F1B3A86C800DA3C69 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		BFCF70A01B3A86C800DA3C69 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		BFCF70A21B3AB33800DA3C69 /* IntroLastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroLastView.xib; sourceTree = "<group>"; };
 		BFD164081B27FE2600BABD09 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		BFD164091B27FE2600BABD09 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		BFD164301B28000B00BABD09 /* LTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTableViewCell.h; sourceTree = "<group>"; };
@@ -243,6 +248,8 @@
 				BFABDB981B286FD00053DDDB /* LoginViewController */,
 				BFABDBB11B28986A0053DDDB /* UITabBarController+Rotate.h */,
 				BFABDBB21B28986A0053DDDB /* UITabBarController+Rotate.m */,
+				BFCF709F1B3A86C800DA3C69 /* IntroViewController.h */,
+				BFCF70A01B3A86C800DA3C69 /* IntroViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -360,6 +367,7 @@
 		BFABDBA51B2893AC0053DDDB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFCF70A21B3AB33800DA3C69 /* IntroLastView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -487,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4800A71B27F2D8007046B9 /* Main.storyboard in Resources */,
+				BFCF70A31B3AB33900DA3C69 /* IntroLastView.xib in Resources */,
 				BF4800AC1B27F2D8007046B9 /* LaunchScreen.xib in Resources */,
 				BF4800A91B27F2D8007046B9 /* Images.xcassets in Resources */,
 			);
@@ -566,6 +575,7 @@
 				BF84DF8C1B388C1E003359EA /* WebViewController.m in Sources */,
 				BFABDB721B2816880053DDDB /* YDDownloadRequestOperation.m in Sources */,
 				BFCF70911B39CD1200DA3C69 /* BookListViewController.m in Sources */,
+				BFCF70A11B3A86C800DA3C69 /* IntroViewController.m in Sources */,
 				BFCF70971B39D3A800DA3C69 /* BookDetailModel.m in Sources */,
 				BFCF709A1B39D9F200DA3C69 /* BookDetailViewController.m in Sources */,
 				BF48009B1B27F2D8007046B9 /* main.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "IntroViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
     [[UITabBar appearance] setTintColor:RGBCOLOR(58, 165, 41)];
+    
     return YES;
 }
 

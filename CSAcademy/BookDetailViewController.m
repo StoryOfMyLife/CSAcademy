@@ -36,6 +36,9 @@ static NSString *url = @"http://116.255.187.20:8088/ChinaStroke/article/articleI
 {
     if (_model != model) {
         _model = model;
+//        CGSize size = [self.bottomView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+//        CGSize textSize = [_model.desc sizeWithFont:nil constrainedToSize:1]
+//        self.bottomView.height = size.height + ;
         self.tableView.tableFooterView = self.bottomView;
         self.name.text = _model.name;
         self.author.text = _model.writer;
