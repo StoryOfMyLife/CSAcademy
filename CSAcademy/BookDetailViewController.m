@@ -7,6 +7,7 @@
 //
 
 #import "BookDetailViewController.h"
+#import "WebViewController.h"
 
 static NSString *url = @"http://116.255.187.20:8088/ChinaStroke/article/articleInfo";
 
@@ -50,9 +51,12 @@ static NSString *url = @"http://116.255.187.20:8088/ChinaStroke/article/articleI
     }
 }
 
-- (IBAction)gotoPDF:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
+    if ([segue.identifier isEqualToString:@"pushPDF"]) {
+        WebViewController *vc = segue.destinationViewController;
+        vc.url = self.model.articleURL;
+    }
 }
 
 
