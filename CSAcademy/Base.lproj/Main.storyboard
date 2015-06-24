@@ -311,7 +311,7 @@
             </objects>
             <point key="canvasLocation" x="2147" y="-942"/>
         </scene>
-        <!--中华卒中学院-->
+        <!--中国卒中学院-->
         <scene sceneID="Yf0-rk-l8D">
             <objects>
                 <tableViewController id="ss7-M3-LkV" customClass="HomeViewController" sceneMemberID="viewController">
@@ -613,7 +613,7 @@
                             <outlet property="delegate" destination="ss7-M3-LkV" id="dCR-pd-Jpg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="中华卒中学院" id="LKI-Bb-FYX">
+                    <navigationItem key="navigationItem" title="中国卒中学院" id="LKI-Bb-FYX">
                         <barButtonItem key="rightBarButtonItem" image="设置按钮" id="aui-jA-lUm">
                             <connections>
                                 <segue destination="qB0-2V-TRD" kind="push" id="bj4-jS-oOs"/>
@@ -1355,8 +1355,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DGK-pl-5oq"/>
-        <segue reference="R0M-96-zIV"/>
         <segue reference="TL0-jf-gfH"/>
+        <segue reference="kDn-hl-cZo"/>
+        <segue reference="R0M-96-zIV"/>
     </inferredMetricsTieBreakers>
 </document>

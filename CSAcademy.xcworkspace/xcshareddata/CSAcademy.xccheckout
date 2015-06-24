@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DB92A108-CFD8-4EAE-962B-38D0E902BF7F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CSAcademy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>60D782880B6970EC3D5E0C19B964105CAF49937B</key>
+		<string>https://github.com/StoryOfMyLife/CSAcademy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CSAcademy.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>60D782880B6970EC3D5E0C19B964105CAF49937B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/StoryOfMyLife/CSAcademy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>60D782880B6970EC3D5E0C19B964105CAF49937B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>60D782880B6970EC3D5E0C19B964105CAF49937B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CSAcademy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
