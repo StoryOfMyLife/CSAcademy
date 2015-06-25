@@ -1109,9 +1109,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="密码图标" translatesAutoresizingMaskIntoConstraints="NO" id="NRV-td-2sG">
                                 <rect key="frame" x="66" y="298" width="36" height="30"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZsA-Z3-yCv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="270X270" translatesAutoresizingMaskIntoConstraints="NO" id="ZsA-Z3-yCv">
                                 <rect key="frame" x="93" y="75" width="135" height="135"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.chinastroke.net" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGr-mV-elD">
                                 <rect key="frame" x="97" y="516" width="126" height="16"/>
@@ -1344,9 +1344,9 @@
         <image name="06" width="369" height="179"/>
         <image name="07" width="382" height="125"/>
         <image name="08" width="640" height="449"/>
+        <image name="270X270" width="135" height="135"/>
         <image name="Android版二维码" width="140" height="140"/>
         <image name="IOS版二维码" width="140" height="140"/>
-        <image name="ic_login_logo" width="135" height="135"/>
         <image name="logo" width="30" height="30"/>
         <image name="会员图标" width="36" height="28"/>
         <image name="会议视频图标" width="59" height="60"/>
