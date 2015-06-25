@@ -15,9 +15,9 @@
 {
     WebViewController *web = segue.destinationViewController;
     if ([segue.identifier isEqualToString:@"UsingHelpPush"]) {
-        web.url = @"http://122.114.52.243:9900/Htmls/help01.htm";
-    } else if ([segue.identifier isEqualToString:@"IntroPush"]) {
         web.url = @"http://122.114.52.243:9900/Htmls/help02.htm";
+    } else if ([segue.identifier isEqualToString:@"IntroPush"]) {
+        web.url = @"http://122.114.52.243:9900/Htmls/help01.htm";
     }
 }
 
